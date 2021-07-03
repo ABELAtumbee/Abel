@@ -14,6 +14,7 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 /*  TYPOGRAPHY  */
@@ -23,6 +24,7 @@ h3 {
   font-weight: bold;
   color: var(--color-heading);
   line-height: 1.1;
+  margin-top: 0;
 }
 
 h1 {
@@ -35,4 +37,127 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+
+.dark--block {
+  background: #000000;
+  color: white;
+}
+
+/*  ICON  */
+.icon-container {
+  background: yellow;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  top: 1rem;
+  bottom: 0;
+  left: 1rem;
+  cursor: pointer;
+}
+
+/*  LIST  */
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+/*  LINK  */
+a {
+  text-decoration: none;
+}
+
+/*  COLLAPSIBLE  */
+
+.collapsible {
+  margin-bottom: 5rem;
+}
+
+.collapsible__heading {
+  font-size: 2rem;
+  margin: 1rem 0 0;
+}
+
+.collapsible .collapsible__content {
+  max-height: 0;
+  opacity: 0;
+}
+
+.collapsible--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/*  NAVIGATION BLOCK */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.nav__icon {
+  fill: white;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px #777777;
+}
+
+.nav__list {
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.nav__list li a {
+  color: white;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .nav__list {
+    max-height: 100vh;
+
+    opacity: 1;
+    overflow: visible;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__item {
+    margin: 0 2rem;
+  }
+
+  .nav__icon {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .nav .nav__list {
+    max-height: 100vh;
+    opacity: 1;
+  }
 }
