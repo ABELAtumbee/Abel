@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.domain__list {
+  text-align: center;
+  max-width: 700;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.domain__item {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .domain__list {
+    margin: 3rem auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .domain__list {
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
