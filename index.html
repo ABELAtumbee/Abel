@@ -14,48 +14,52 @@
     />
   </head>
   <body>
-    <nav class="dark--block">
-      <div class="collapsible collapsible--expanded nav">
-        <div class="logo__image">
-          <img src="/images/logo.svg" alt="" />
+    <div class="dark--block block--skewed-right">
+      <nav>
+        <div class="collapsible collapsible--expanded nav">
+          <div class="logo__image">
+            <img src="/images/logo.svg" alt="" />
+          </div>
+
+          <svg class="icon nav__icon">
+            <use xlink:href="/images/sprite.svg#menu"></use>
+          </svg>
+
+          <ul class="list collapsible__content nav__list">
+            <li class="nav__item"><a href="">Hosting</a></li>
+            <li class="nav__item"><a href="">VPS</a></li>
+            <li class="nav__item"><a href="">Domain</a></li>
+            <li class="nav__item"><a href="">Pricing</a></li>
+          </ul>
         </div>
+      </nav>
 
-        <svg class="icon nav__icon">
-          <use xlink:href="/images/sprite.svg#menu"></use>
-        </svg>
+      <div class="grid grid--1x2 body__block">
+        <header class="body__header">
+          <h1 class="body__heading">Cloud hosting for pros</h1>
+          <p class="body__content">
+            Deploy your website in less than 60 seconds
+          </p>
 
-        <ul class="list collapsible__content nav__list">
-          <li class="nav__item"><a href="">Hosting</a></li>
-          <li class="nav__item"><a href="">VPS</a></li>
-          <li class="nav__item"><a href="">Domain</a></li>
-          <li class="nav__item"><a href="">Pricing</a></li>
-        </ul>
+          <a class="btn btn--accent btn--streched body__btn" href="#"
+            >get started</a
+          >
+        </header>
+
+        <picture class="banner">
+          <source
+            type="image/webp"
+            srcset="/images/banner.webp 1x, /images/banner2x.webp 2x"
+          />
+
+          <source
+            type="image/png"
+            srcset="/images/banner.png 1x, /images/banner2x.png 2x"
+          />
+
+          <img src="/images/banner2x.png" alt="banner" />
+        </picture>
       </div>
-    </nav>
-
-    <div class="dark--block block--skewed-right grid grid--1x2 body__block">
-      <header class="body__header">
-        <h1 class="body__heading">Cloud hosting for pros</h1>
-        <p class="body__content">Deploy your website in less than 60 seconds</p>
-
-        <a class="btn btn--accent btn--streched body__btn" href="#"
-          >get started</a
-        >
-      </header>
-
-      <picture class="banner">
-        <source
-          type="image/webp"
-          srcset="/images/banner.webp 1x, /images/banner2x.webp 2x"
-        />
-
-        <source
-          type="image/png"
-          srcset="/images/banner.png 1x, /images/banner2x.png 2x"
-        />
-
-        <img src="/images/banner2x.png" alt="banner" />
-      </picture>
     </div>
 
     <section class="domain">
